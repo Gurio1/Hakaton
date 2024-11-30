@@ -10,6 +10,13 @@ Welcome to the **Health Consultations Platform** project repository! This is a w
 - **Doctor-Patient Communication**: Online consultations with doctors via video calls.
 - **Responsive Design**: Fully mobile-friendly layout ensuring accessibility across all devices.
 
+## Team Members
+
+- Андрей Илиев: Frontend Developer
+- Полина Найденова: Team Lead
+- Маритин Върбанов: Designer
+- Филип: Market Research and Competitive Analysis
+
 ## Technologies Used
 
 - **Frontend**:
@@ -27,10 +34,15 @@ Welcome to the **Health Consultations Platform** project repository! This is a w
    ```bash
    git clone https://github.com/yourusername/Health-Consultations-Platform.git
    ```
-
-## Team Members
-
-- Андрей Илиев: Frontend Developer
-- Полина Найденова: Team Lead
-- Маритин Върбанов: Designer
-- Филип: Market Research and Competitive Analysis
+2. **Navigate into the project directory**
+   ```bash
+   cd Health-Consultations-Platform
+   ```
+3. **Install the dependencies:**
+   ```bash
+   npm install
+   ```
+4. **Run the development server:**
+   ```bash
+   ng serve
+   ```
