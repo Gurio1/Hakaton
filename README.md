@@ -1,27 +1,36 @@
-# Doctors
+# Health Consultations Platform
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+Welcome to the **Health Consultations Platform** project repository! This is a web-based application built for providing online consultations between users and doctors. It allows users to schedule appointments, answer relevant questions, and connect with healthcare professionals seamlessly.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **User Registration & Login**: Secure authentication to manage user sessions.
+- **Consultations**: Schedule online consultations with doctors based on the user's needs.
+- **Dynamic Question System**: The system asks users a set of questions to determine the best doctor for their needs.
+- **Doctor-Patient Communication**: Online consultations with doctors via video calls.
+- **Responsive Design**: Fully mobile-friendly layout ensuring accessibility across all devices.
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Frontend**:
 
-## Build
+  - Angular (for building the dynamic, single-page application)
+  - HTML/CSS/JavaScript (for the basic layout and design)
+  - Bootstrap (for styling and responsive layout)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Deployment**:
+  - GitHub Pages (for static site deployment)
 
-## Running unit tests
+## How to Run Locally
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/Health-Consultations-Platform.git
+   ```
 
-## Running end-to-end tests
+## Team Members
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Андрей Илиев: Frontend Developer
+- Полина Найденова: Team Lead
+- Маритин Върбанов: Designer
+- Филип: Market Research and Competitive Analysis
