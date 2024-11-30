@@ -1,0 +1,20 @@
+<div class="navigation">
+  <header>
+    <h1>Welcome to Health Consultations Platform</h1>
+  </header>
+
+  <nav>
+    <a routerLink="/home" routerLinkActive="active">Home</a>
+    <a routerLink="/about" routerLinkActive="active">About</a>
+    <a routerLink="/consultations" routerLinkActive="active">Consultations</a>
+    <a id="login-tab" *ngIf="!currentUser" routerLink="/login">Login</a>
+    <div *ngIf="currentUser" class="dropdown">
+      <button class="dropdown-btn">Welcome, {{ currentUser }}</button>
+      <div class="dropdown-content">
+        <a routerLink="/consultations" routerLinkActive="active"
+          >My consultations</a
+        >
+      </div>
+    </div>
+  </nav>
+</div>

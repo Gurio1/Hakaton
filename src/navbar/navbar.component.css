@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #343a40;
+  padding-bottom: 10px;
+  z-index: 1000;
+}
+
+/* Header Styles */
+header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 35px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* Navigation Bar Styles */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #343a40;
+  padding: 10px 0;
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #007bff;
+}
+
+nav a.active {
+  background-color: #0056b3;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer; /* Make the entire area clickable */
+}
+
+/* Button style for dropdown */
+.dropdown-btn {
+  background-color: #014fa3;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: left; /* Make sure text is aligned correctly */
+}
+
+.dropdown-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none; /* Hide by default */
+  position: absolute;
+  background-color: #343a40;
+  min-width: 200px; /* Increased width for better readability */
+  z-index: 1;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px 0; /* Add some padding for more space */
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px; /* Rounded edges for dropdown items */
+  margin: 5px 0; /* Add spacing between items */
+}
+
+.dropdown-content a:hover {
+  background-color: #007bff; /* Change color when hovering */
+}
+
+/* Show the dropdown content when button is clicked */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
