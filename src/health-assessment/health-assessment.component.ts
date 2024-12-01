@@ -31,7 +31,7 @@ export class HealthAssessmentComponent {
   }
 
   generateSuggestion(): void {
-    if (this.answers[0] === 'Общ преглед на здравето') {
+    if (this.answers[0] === 'Кожни проблеми') {
       this.suggestionMessage = `Препоръчан лекар: ${this.doctors[0].name} (${this.doctors[0].specialty})`;
     } else if (this.answers[0] === 'Кожни проблеми') {
       this.suggestionMessage = `Препоръчан лекар: ${this.doctors[1].name} (${this.doctors[1].specialty})`;

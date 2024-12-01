@@ -18,7 +18,6 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
     // Subscribe to the current user observable to update the navbar
     this.loginService.currentUser$.subscribe((username) => {
-      console.log('Here');
       this.currentUser = username;
     });
   }

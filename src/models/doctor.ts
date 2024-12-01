@@ -7,13 +7,6 @@ export interface Doctor {
 
 export const DOCTORS: Doctor[] = [
   {
-    id: 0,
-    name: 'Д-р Джон Доу',
-    specialty: 'Общопрактикуващ лекар',
-    description:
-      'Специализиран в общо здраве, уелнес и превантивна грижа. Наличен за всички общи здравни консултации.',
-  },
-  {
     id: 1,
     name: 'Д-р Алис Смит',
     specialty: 'Дерматолог',

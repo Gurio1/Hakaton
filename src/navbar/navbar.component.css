@@ -2,10 +2,29 @@
   nav a {
     padding: 10px 2px !important;
     margin: 0 2px !important;
-    font-size: 12px !important;
+    font-size: 9px !important;
   }
   .logo {
     margin-right: 0px !important;
+  }
+  .dropdown-content {
+    min-width: 150px !important;
+  }
+  .dropdown:hover .dropdown-content {
+    transform: translateX(0) !important; /* Keep it within the screen */
+  }
+
+  /* Button style for dropdown */
+  .dropdown-btn {
+    padding: 5px 10px !important;
+    font-size: 0.7em !important;
+    font-weight: bold;
+    text-align: left; /* Make sure text is aligned correctly */
+  }
+
+  .dropdown-content {
+    min-width: 100px !important;
+    padding: 5px 0 !important;
   }
 }
 
@@ -83,16 +102,15 @@ nav a.active {
   background-color: #0056b3;
 }
 
-/* Dropdown Content */
 .dropdown-content {
   display: none; /* Hide by default */
   position: absolute;
   background-color: #343a40;
-  min-width: 200px; /* Increased width for better readability */
+  min-width: 200px;
   z-index: 1;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  padding: 10px 0; /* Add some padding for more space */
+  padding: 10px 0;
 }
 
 .dropdown-content a {
