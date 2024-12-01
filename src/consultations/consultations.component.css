@@ -1,77 +1,78 @@
-header {
-  background-color: #007bff;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  background: #343a40;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 14px 20px;
-  display: block;
-}
-
-nav a:hover {
-  background-color: #007bff;
-}
-
+/* Container Styling */
 .container {
-  max-width: 1200px;
-  margin: 20px auto;
+  max-width: 70%;
+  margin: 0 auto;
   padding: 20px;
-  background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-h2 {
+.container h2 {
   text-align: center;
+  color: #007bff;
   margin-bottom: 20px;
 }
 
+/* Consultation Card Styling */
 .consultation-card {
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: box-shadow 0.3s ease;
+}
+
+.consultation-card:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .consultation-card h3 {
-  margin: 0 0 10px 0;
+  margin: 0;
+  font-size: 1.2rem;
+  color: #343a40;
 }
 
 .consultation-card p {
-  margin: 0;
-  color: #555;
+  margin: 5px 0;
+  color: #6c757d;
 }
 
+/* Button Styling */
 .book-btn {
-  padding: 10px 20px;
   background-color: #007bff;
   color: white;
-  text-decoration: none;
+  border: none;
+  padding: 10px 20px;
   border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .book-btn:hover {
   background-color: #0056b3;
 }
 
-footer {
-  text-align: center;
-  padding: 10px;
-  background: #343a40;
-  color: white;
+/* Notifications */
+.notifications {
   position: fixed;
-  bottom: 0;
-  width: 100%;
+  top: 20px;
+  right: 20px;
+  padding: 15px;
+  background-color: #28a745; /* Green background */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.notifications.ng-enter,
+.notifications.ng-leave {
+  transition: opacity 0.3s ease;
 }

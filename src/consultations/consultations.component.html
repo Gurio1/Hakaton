@@ -1,35 +1,26 @@
 <div class="container">
   <h2>Available Consultations</h2>
 
-  <div class="consultation-card">
+  <div class="consultation-card" *ngFor="let consultation of consultations">
     <div>
-      <h3>General Practitioner</h3>
-      <p>Get expert advice on common health issues.</p>
+      <h3>{{ consultation.name }} - {{ consultation.specialty }}</h3>
+      <p>{{ consultation.description }}</p>
     </div>
-    <a routerLink="/videoConsultation" class="book-btn">Book Now</a>
+    <button class="book-btn" (click)="openSignUpModal(consultation.id)">
+      Sign Up
+    </button>
   </div>
 
-  <div class="consultation-card">
-    <div>
-      <h3>Dermatologist</h3>
-      <p>Consult with a specialist for skin-related issues.</p>
-    </div>
-    <a routerLink="/videoConsultation" class="book-btn">Book Now</a>
-  </div>
+  <!-- Notification for appointment confirmation -->
+  <output *ngIf="notificationMessage" class="notifications">{{
+    notificationMessage
+  }}</output>
 
-  <div class="consultation-card">
-    <div>
-      <h3>Pediatrician</h3>
-      <p>Special care for your children’s health.</p>
-    </div>
-    <a routerLink="/videoConsultation" class="book-btn">Book Now</a>
-  </div>
-
-  <div class="consultation-card">
-    <div>
-      <h3>Psychologist</h3>
-      <p>Support for mental health and well-being.</p>
-    </div>
-    <a routerLink="/videoConsultation" class="book-btn">Book Now</a>
-  </div>
+  <app-enroll-consultation
+    *ngIf="showModal"
+    [consultation]="selectedConsultation"
+    (closeModal)="closeSignUpModal()"
+    (appointmentConfirmed)="handleAppointmentConfirmation($event)"
+  >
+  </app-enroll-consultation>
 </div>

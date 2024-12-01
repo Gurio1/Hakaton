@@ -1,0 +1,18 @@
+<div class="modal-overlay">
+  <div class="modal-content">
+    <h3>Sign Up for {{ consultation!.specialty }}</h3>
+    <p>Select a convenient date for your consultation:</p>
+
+    <label for="appointmentDate">Select Date and Time:</label>
+    <input
+      type="datetime-local"
+      id="appointmentDate"
+      [(ngModel)]="selectedDateTime"
+      name="appointmentDate"
+      required
+    />
+
+    <button (click)="confirmAppointment()">Confirm Appointment</button>
+    <button class="close-btn" (click)="closeModalHandler()">Cancel</button>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+.question-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  transition: opacity 0.5s ease;
+}
+
+h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.option-block {
+  display: block;
+  background-color: #007bff;
+  color: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.option-block:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.selected {
+  background-color: #0056b3;
+  font-weight: bold;
+}
+
+.question-container.ng-enter,
+.question-container.ng-leave {
+  opacity: 0;
+}
+
+.question-container.ng-enter-active,
+.question-container.ng-leave-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}

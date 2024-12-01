@@ -1,0 +1,23 @@
+<div class="container">
+  <h2>Enrolled Consultations</h2>
+
+  <div *ngIf="enrolledConsultations.length > 0; else noAppointments">
+    <div
+      class="consultation-card"
+      *ngFor="let consultation of enrolledConsultations"
+    >
+      <h3>{{ consultation.name }} - {{ consultation.speciality }}</h3>
+      <p>Date and Time: {{ formatDate(consultation.date) }}</p>
+      <button
+        class="join-btn"
+        [routerLink]="['/videoConsultation', consultation.consultationId]"
+      >
+        Join
+      </button>
+    </div>
+  </div>
+
+  <ng-template #noAppointments>
+    <p>No enrolled consultations found.</p>
+  </ng-template>
+</div>

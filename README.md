@@ -15,7 +15,7 @@ Welcome to the **Health Consultations Platform** project repository! This is a w
 - Андрей Илиев: Frontend Developer
 - Полина Найденова: Team Lead
 - Маритин Върбанов: Designer
-- Филип: Market Research and Competitive Analysis
+- Филип Арсенов: Market Research and Competitive Analysis
 
 ## Technologies Used
 

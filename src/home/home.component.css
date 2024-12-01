@@ -26,3 +26,30 @@
 .cta:hover {
   background-color: #0056b3;
 }
+
+/* Apply shadow directly on the image using filter */
+.hero-image {
+  width: 80%; /* Make the image responsive */
+  max-width: 600px; /* Max width to prevent it from becoming too large */
+  height: auto;
+  border-radius: 10px; /* Optional: Rounded corners */
+  filter: drop-shadow(
+    0px 10px 15px rgba(0, 0, 0, 0.3)
+  ); /* Shadow effect on the image itself */
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Smooth scaling and shadow transition */
+}
+
+/* Optional: Mobile responsiveness */
+@media (max-width: 768px) {
+  .hero-image {
+    width: 90%; /* Make the image even smaller on mobile */
+  }
+
+  .hero h1 {
+    font-size: 2rem; /* Slightly smaller font size on mobile */
+  }
+
+  .hero p {
+    font-size: 1rem; /* Adjust text size for mobile */
+  }
+}

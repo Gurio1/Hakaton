@@ -1,0 +1,25 @@
+<div class="question-container">
+  <!-- Display the current question -->
+  <h2>{{ questions[currentQuestionIndex].question }}</h2>
+
+  <!-- Display options as clickable blocks -->
+  <div
+    *ngFor="
+      let option of questions[currentQuestionIndex]?.options;
+      let i = index
+    "
+    class="option-block"
+    [ngClass]="{ selected: answers[currentQuestionIndex] === option }"
+    (click)="onAnswer(currentQuestionIndex, option)"
+  >
+    {{ option }}
+  </div>
+</div>
+
+<!-- Modal Component -->
+<app-modal
+  *ngIf="showModal"
+  [message]="suggestionMessage"
+  (closeModal)="closeModal()"
+  [id]="consultationId"
+></app-modal>

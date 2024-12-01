@@ -1,0 +1,60 @@
+.container {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.consultation-card {
+  background-color: #f4f4f9;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.consultation-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+}
+
+.consultation-card p {
+  font-size: 1.2em;
+}
+
+.ng-template {
+  text-align: center;
+  color: #555;
+}
+
+/* Join button styling */
+.join-btn {
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text color */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Add some padding */
+  font-size: 16px; /* Set the font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth hover transition */
+}
+
+/* Hover effect */
+.join-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Focus effect */
+.join-btn:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.8); /* Add blue glow effect */
+}
+
+/* Active effect */
+.join-btn:active {
+  background-color: #003366; /* Darker blue when clicked */
+  transform: scale(0.98); /* Slightly shrink the button */
+}

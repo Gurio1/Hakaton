@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Router, RouterModule } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-consultation-video',
@@ -8,6 +8,15 @@ import { Router, RouterModule } from '@angular/router';
   templateUrl: './consultation-video.component.html',
   styleUrl: './consultation-video.component.css',
 })
-export class ConsultationVideoComponent {
-  constructor(private router: Router) {}
+export class ConsultationVideoComponent implements OnInit {
+  consultationId: number | null = null;
+
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe((params) => {
+      this.consultationId = +params.get('id')!;
+      // You can now use this.consultationId to fetch consultation details from localStorage or an API
+    });
+  }
 }
