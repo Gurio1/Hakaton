@@ -21,7 +21,7 @@ export const routes: Routes = [
     component: ConsultationVideoComponent,
     canActivate: [AuthGuardService],
   },
-  { path: 'about', component: AboutComponent, canActivate: [AuthGuardService] },
+  { path: 'about', component: AboutComponent },
   {
     path: 'health-assessment',
     component: HealthAssessmentComponent,
