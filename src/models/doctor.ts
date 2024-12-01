@@ -8,30 +8,30 @@ export interface Doctor {
 export const DOCTORS: Doctor[] = [
   {
     id: 0,
-    name: 'Dr. John Doe',
-    specialty: 'General Practitioner',
+    name: 'Д-р Джон Доу',
+    specialty: 'Общопрактикуващ лекар',
     description:
-      'Specialized in general health, wellness, and preventive care. Available for all general health consultations.',
+      'Специализиран в общо здраве, уелнес и превантивна грижа. Наличен за всички общи здравни консултации.',
   },
   {
     id: 1,
-    name: 'Dr. Alice Smith',
-    specialty: 'Dermatologist',
+    name: 'Д-р Алис Смит',
+    specialty: 'Дерматолог',
     description:
-      'Expert in treating skin conditions, allergies, and dermatological consultations.',
+      'Експерт в лечението на кожни заболявания, алергии и дерматологични консултации.',
   },
   {
     id: 2,
-    name: 'Dr. Bob Johnson',
-    specialty: 'Psychiatrist',
+    name: 'Д-р Боб Джонсън',
+    specialty: 'Психиатър',
     description:
-      'Experienced in mental health, therapy, and psychiatric evaluations.',
+      'С опит в областта на психичното здраве, терапията и психиатричните оценки.',
   },
   {
     id: 3,
-    name: 'Dr. Emily Davis',
-    specialty: 'Pain Management Specialist',
+    name: 'Д-р Емили Дейвис',
+    specialty: 'Специалист по управление на болката',
     description:
-      'Specializes in pain relief therapies and chronic pain management.',
+      'Специализира в терапии за облекчаване на болката и управление на хроничната болка.',
   },
 ];

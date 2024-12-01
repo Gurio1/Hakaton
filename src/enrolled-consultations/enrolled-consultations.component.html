@@ -1,5 +1,5 @@
 <div class="container">
-  <h2>Enrolled Consultations</h2>
+  <h2>Записани консултации</h2>
 
   <div *ngIf="enrolledConsultations.length > 0; else noAppointments">
     <div
@@ -7,7 +7,7 @@
       *ngFor="let consultation of enrolledConsultations"
     >
       <h3>{{ consultation.name }} - {{ consultation.speciality }}</h3>
-      <p>Date and Time: {{ formatDate(consultation.date) }}</p>
+      <p>Дата и час: {{ formatDate(consultation.date) }}</p>
       <button
         class="join-btn"
         [routerLink]="['/videoConsultation', consultation.consultationId]"
@@ -18,6 +18,6 @@
   </div>
 
   <ng-template #noAppointments>
-    <p>No enrolled consultations found.</p>
+    <p>Няма намерени записани консултации.</p>
   </ng-template>
 </div>

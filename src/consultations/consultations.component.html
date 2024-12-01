@@ -1,5 +1,5 @@
 <div class="container">
-  <h2>Available Consultations</h2>
+  <h2>Налични консултации</h2>
 
   <div class="consultation-card" *ngFor="let consultation of consultations">
     <div>
@@ -7,7 +7,7 @@
       <p>{{ consultation.description }}</p>
     </div>
     <button class="book-btn" (click)="openSignUpModal(consultation.id)">
-      Sign Up
+      Запази час
     </button>
   </div>
 

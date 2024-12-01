@@ -24,23 +24,21 @@ export class HealthAssessmentComponent {
     this.answers[questionIndex] = answer;
 
     if (this.currentQuestionIndex < this.questions.length - 1) {
-      setTimeout(() => {
-        this.currentQuestionIndex++;
-      }, 500);
+      this.currentQuestionIndex++;
     } else {
       this.generateSuggestion(); // Generate a suggestion once all questions are answered
     }
   }
 
   generateSuggestion(): void {
-    if (this.answers[0] === 'General health check') {
-      this.suggestionMessage = `Recommended Doctor: ${this.doctors[0].name} (${this.doctors[0].specialty})`;
-    } else if (this.answers[0] === 'Skin issues') {
-      this.suggestionMessage = `Recommended Doctor: ${this.doctors[1].name} (${this.doctors[1].specialty})`;
-    } else if (this.answers[0] === 'Mental health') {
-      this.suggestionMessage = `Recommended Doctor: ${this.doctors[2].name} (${this.doctors[2].specialty})`;
-    } else if (this.answers[0] === 'Pain management') {
-      this.suggestionMessage = `Recommended Doctor: ${this.doctors[3].name} (${this.doctors[3].specialty})`;
+    if (this.answers[0] === 'Общ преглед на здравето') {
+      this.suggestionMessage = `Препоръчан лекар: ${this.doctors[0].name} (${this.doctors[0].specialty})`;
+    } else if (this.answers[0] === 'Кожни проблеми') {
+      this.suggestionMessage = `Препоръчан лекар: ${this.doctors[1].name} (${this.doctors[1].specialty})`;
+    } else if (this.answers[0] === 'Психично здраве') {
+      this.suggestionMessage = `Препоръчан лекар: ${this.doctors[2].name} (${this.doctors[2].specialty})`;
+    } else if (this.answers[0] === 'Управление на болката') {
+      this.suggestionMessage = `Препоръчан лекар: ${this.doctors[3].name} (${this.doctors[3].specialty})`;
     }
 
     this.showModal = true; // Show modal with suggestion

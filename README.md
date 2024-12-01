@@ -32,11 +32,11 @@ Welcome to the **Health Consultations Platform** project repository! This is a w
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/Health-Consultations-Platform.git
+   git clone https://github.com/<username>/Hakaton.git
    ```
 2. **Navigate into the project directory**
    ```bash
-   cd Health-Consultations-Platform
+   cd Doctors
    ```
 3. **Install the dependencies:**
    ```bash

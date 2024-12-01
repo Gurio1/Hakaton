@@ -1,19 +1,19 @@
 <div class="navigation">
   <header>
-    <h1>Welcome to Health Consultations Platform</h1>
+    <h1>Добре дошли в платформата за здравни консултации</h1>
   </header>
 
   <nav>
-    <a routerLink="/home" routerLinkActive="active">Home</a>
-    <a routerLink="/about" routerLinkActive="active">About</a>
-    <a routerLink="/health-assessment" routerLinkActive="active">Health</a>
-    <a routerLink="/consultations" routerLinkActive="active">Consultations</a>
-    <a id="login-tab" *ngIf="!currentUser" routerLink="/login">Login</a>
+    <a routerLink="/home" routerLinkActive="active">Начало</a>
+    <a routerLink="/about" routerLinkActive="active">За нас</a>
+    <a routerLink="/health-assessment" routerLinkActive="active">Здраве</a>
+    <a routerLink="/consultations" routerLinkActive="active">Консултации</a>
+    <a id="login-tab" *ngIf="!currentUser" routerLink="/login">Вход</a>
     <div *ngIf="currentUser" class="dropdown">
-      <button class="dropdown-btn">Welcome, {{ currentUser }}</button>
+      <button class="dropdown-btn">Добре дошли, {{ currentUser }}</button>
       <div class="dropdown-content">
         <a routerLink="/enrolled-consultations" routerLinkActive="active"
-          >My consultations</a
+          >Моите консултации</a
         >
       </div>
     </div>
