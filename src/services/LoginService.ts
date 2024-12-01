@@ -6,6 +6,8 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class LoginService {
   // Create a BehaviorSubject to track the current user's login state
+  isAuthenticated = false;
+
   private currentUserSubject = new BehaviorSubject<string | null>(null);
 
   // Observable for the current user (so other components can subscribe)
@@ -14,5 +16,6 @@ export class LoginService {
   // Login function to set the current user
   login(username: string): void {
     this.currentUserSubject.next(username); // Set the logged-in user
+    this.isAuthenticated = true;
   }
 }

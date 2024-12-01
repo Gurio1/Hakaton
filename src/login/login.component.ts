@@ -18,8 +18,10 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
   // In-memory "database" of users
+  isAuthenticated = false;
   private users: { [key: string]: string } = {
     Andrey: 'admin123',
+    User: 'user',
   };
 
   loginForm = new FormGroup({
