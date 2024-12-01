@@ -19,9 +19,7 @@ import { Router } from '@angular/router';
 export class LoginComponent {
   // In-memory "database" of users
   private users: { [key: string]: string } = {
-    john_doe: 'password123',
-    jane_smith: 'mypassword',
-    admin: 'admin123',
+    Andrey: 'admin123',
   };
 
   loginForm = new FormGroup({
