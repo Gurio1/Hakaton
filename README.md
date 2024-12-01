@@ -16,6 +16,7 @@ Welcome to the **Health Consultations Platform** project repository! This is a w
 - Полина Найденова: Team Lead
 - Маритин Върбанов: Designer
 - Филип Арсенов: Market Research and Competitive Analysis
+- Кристиан Божков:A developer responsible for implementing various functionalities and optimizing the platform. Kristiyan also contributed to the integration processes and the enhancement of interactions between different system components, which significantly improved the overall efficiency of the project.
 
 ## Technologies Used
 
