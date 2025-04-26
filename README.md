@@ -33,7 +33,7 @@ Welcome to the **Health Consultations Platform** project repository! This is a w
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/<username>/Hakaton.git
+   git clone https://github.com/Gurio1/Hakaton.git
    ```
 2. **Navigate into the project directory**
    ```bash
